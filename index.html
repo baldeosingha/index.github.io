@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anthony's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/MyWebsite.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+  body {
+      position: relative;
+      font-family: 'Cardo', serif; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #D7D3D2;}
+  #section2 {padding-top:50px;height:500px;color: #D7D3D2; background-color: #ffffff;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #D7D3D2;}
+  </style>
+  
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Anthony Baldeosingh</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Welcome</a></li>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1 class="paragraphTitle">Welcome</h1>
+  <div class="w3-container">
+  <p class ="paragraphs"> Welcome! Anthony Baldeosingh is currently a freshman attending Allegheny 
+    College in Meadville, PA. He currently is part of the Finance and Facilities Commitee 
+    and is also a member of the Allegheny Football and Track Team. Anthony is currently working on a Dual Bachelors degree
+    in which he will graduate with onde Degree in Applied Computing and another in Mechanical Engineering. Aside from academics a few of Anthony's interest are basketball, music and cooking ! 
+    </p>
+    </div>
+  
+</div>
+<div id="section2" class="container-fluid">
+  <h1 class="paragraphTitle">Work</h1>
+  <p class ="paragraphs"> Here are Anthony's different Github accounts, so that you can look through to see what he's been up to !</p>
+  <p class= "link"><a href = "https://github.com/anthony1baldeosingh"> Account 1</a></p>
+  <p class= "link"><a href = "https://github.com/baldeosingha"> Account 2 </a></p>
+  <p class= "link"><a href = "https://github.com/ABaldeosinghASC">Account 3</a></p>
+
+</div>
+<div id="section3" class="container-fluid">
+ <h1  class="paragraphTitle">Contact</h1>
+ <p class ="paragraphs"> Want to Conatact Anthony ? Leave a message, email him at baldeosingha@allegheny.edu or connect with him on <a href ="https://www.linkedin.com/in/anthony-b-823607126"><span style="color: white;">LinkedIn !</span></a></p>
+ <div class="form-group">
+    <label for="comment">Message:</label>
+    <textarea id ="WebsiteMessage" placeholder ="Type here ..." class="form-control" rows="5"></textarea>
+    <p style=" padding-top:5px; "><button type="button" class="btn btn-primary btn-sm" 
+      id="sendMessaage" onclick="SubmitClick()">
+      Send Message</button></p>
+  </div>
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCgiTYMkO6sLidHuyaqG_VKxQQwM_MtlkY",
+      authDomain: "website-messages-faec4.firebaseapp.com",
+      databaseURL: "https://website-messages-faec4.firebaseio.com",
+      projectId: "website-messages-faec4",
+      storageBucket: "website-messages-faec4.appspot.com",
+      messagingSenderId: "163948803490"
+    };
+    firebase.initializeApp(config);
+  </script>
+   <script src="MyWebsite.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+.paragraphTitle{
+    font-family: 'Cardo', serif;
+    text-align: center;
+}
+.paragraphs{
+    font-family: 'Cardo', serif;
+    text-align: center; 
+    font-size: 17px;
+    color: #DB9D8E;
+}
+
+.link{
+    text-align: center;
+}
+
+#textarea{
+    font-family: 'Cardo', serif;
+    color: #DB9D8E;
+
+}
